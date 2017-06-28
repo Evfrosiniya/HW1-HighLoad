@@ -4,13 +4,6 @@ import socket
 from extensions import Request
 
 
-class Worker:
-    def __init__(self, pid, pipe):
-        self.pid = pid
-        self.working = False
-        self.pipe = pipe
-
-
 class HttpServer:
     workers = []
 
